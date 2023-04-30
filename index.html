@@ -9,9 +9,10 @@
   <body>
     <h1>Pete's Pizza Delivery</h1>
     <h3>Online Order Form</h3>
-    <form>
-       <label>*Name
-        <input>
+    <form id="delivery-form">
+      <fieldset class="fieldset">
+       <label for="name" id="name">*Name
+        <input id="name" type="name">
       </label><br>
 
       <label>*Address
@@ -36,26 +37,29 @@
 
       <p>*required fields</p>
 
-      <h3>Topping</h3>
+      <label>Topping</label><br>
         <input type="radio">Margherita</input><br>
         <input type="radio">Four Seasons</input><br>
-        <input type="radio">Meat Feast</input>
+        <input type="radio">Meat Feast</input><br>
 
-      <h3>Size</h3>
-        <input type="radio">Small</input><br>
-        <input type="radio">Medium</input><br>
-        <input type="radio">Large</input>
+      <label>Size</label><br>
+        <input type="radio" value="samll">Small</input><br>
+        <input type="radio" value="medium">Medium</input><br>
+        <input type="radio" value="large">Large</input><br>
 
-      <h3>Extras</h3>
-        <input type="radio">Mushrooms</input><br>
-        <input type="radio">Green peppers</input><br>
-        <input type="radio">Anchovies</input><br>
-        <input type="radio">Extra cheese</input><br>
+      <label>Extras</label><br>
+        <input type="radio" value="mushrooms">Mushrooms</input><br>
+        <input type="radio" value="green-pepper">Green peppers</input><br>
+        <input type="radio" value="anchovies">Anchovies</input><br>
+        <input type="radio" value="extra-cheese">Extra cheese</input><br><br>
 
+      <label for="time">preferred delivery time</label>
+        <input type="time"></input><br>
       <p>Delivery instructions</p>
         <textarea></textarea><br><br>
 
       <button class="submit">Submit order</button>
+    </fieldset>
     </form>
   </body>
 </html>
