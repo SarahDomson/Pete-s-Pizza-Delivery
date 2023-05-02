@@ -1,0 +1,44 @@
+.row, .rowB {
+  margin-left: 110px;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* Clear floats after the columns */
+.row:after, .rowB:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 120px;
+}
+
+.center{
+  text-align: center;
+}
+
+td {
+  text-align: right;
+}
+table {
+  width: 80%;
+}
+input {
+  text-align: right;
+}
+.right{
+  text-align:center;
+}
+.rowB {
+  text-align: center;
+}
+
+.colA{
+  border: 1px solid black;
+}

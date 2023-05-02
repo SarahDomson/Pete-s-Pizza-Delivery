@@ -7,59 +7,92 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Pete's Pizza Delivery</h1>
-    <h3>Online Order Form</h3>
     <form id="delivery-form">
       <fieldset class="fieldset">
-       <label for="name" id="name">*Name
-        <input id="name" type="name">
-      </label><br>
+        <h1 class="center">Pete's Pizza Delivery</h1>
+        <h3 class="center">Online Order Form</h3>
+        <table style="width:85%">
+          <tr>
+            <td> <label for="name" id="name">*Name
+              <input id="name" type="name">
+            </label></td>
+            <td><label type=>*Tel:
+              <input>
+            </label></td>
+          </tr>
+          <tr>
+            <td><label>*Address
+              <input>
+            </label></td>
+            <td><label>*Email:
+              <input>
+            </label></td>
+          </tr>
+          <tr>
+            <td>
+              <label>*Town/City:
+                <input>
+              </label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>*Postcode:
+                <input>
+              </label>
+            </td>
+          </tr>
+        </table>
 
-      <label>*Address
-        <input>
-      </label><br>
+      <p class="center">*required fields</p>
+      
+      <div class="row">
+        <div class="col">
+          <p><b>Topping</b></p>
+          <input type="radio">Margherita</input><br>
+          <input type="radio">Four Seasons</input><br>
+          <input type="radio">Meat Feast</input><br>
+        </div>
+        <div class="col">
+          <p><b>Size</b></p>
+          <input type="radio" value="samll">Small</input><br>
+          <input type="radio" value="medium">Medium</input><br>
+          <input type="radio" value="large">Large</input><br>
+        </div>
+        <div class="col">
+          <p><b>Extras</b></p>
+          <input type="checkbox" value="mushrooms">Mushrooms</input><br>
+          <input type="checkbox" value="green-pepper">Green peppers</input><br>
+          <input type="checkbox" value="anchovies">Anchovies</input><br>
+          <input type="checkbox" value="extra-cheese">Extra cheese</input><br><br>
+        </div>
+      </div>
 
-      <label>*Town/City:
-        <input>
-      </label><br>
+      <div class="right">
+        <table style="margin-left: 90px">
+          <tr>
+            <td style="text-align: right;">
+              <label for="time">Preferred delivery time:</label>
+            </td>
+            <td style="text-align: left;">
+              <input type="time"></input>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">
+              <label>Delivery instructions:</label>
+            </td>
+            <td style="text-align: left;">
+              <textarea></textarea>
+            </td>
+          </tr>
+        </table>
+        <br>
 
-      <label>*Postcode:
-        <input>
-      </label><br>
-
-      <label type=>*Tel:
-        <input>
-      </label><br>
-
-      <label>*Email:
-        <input>
-      </label>
-
-      <p>*required fields</p>
-
-      <label>Topping</label><br>
-        <input type="radio">Margherita</input><br>
-        <input type="radio">Four Seasons</input><br>
-        <input type="radio">Meat Feast</input><br>
-
-      <label>Size</label><br>
-        <input type="radio" value="samll">Small</input><br>
-        <input type="radio" value="medium">Medium</input><br>
-        <input type="radio" value="large">Large</input><br>
-
-      <label>Extras</label><br>
-        <input type="radio" value="mushrooms">Mushrooms</input><br>
-        <input type="radio" value="green-pepper">Green peppers</input><br>
-        <input type="radio" value="anchovies">Anchovies</input><br>
-        <input type="radio" value="extra-cheese">Extra cheese</input><br><br>
-
-      <label for="time">preferred delivery time</label>
-        <input type="time"></input><br>
-      <p>Delivery instructions</p>
-        <textarea></textarea><br><br>
-
-      <button class="submit">Submit order</button>
+        <button class="submit">Submit order</button>
+      </div>
     </fieldset>
     </form>
   </body>
 </html>
+
